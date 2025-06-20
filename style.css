@@ -1,0 +1,59 @@
+:root{
+    --main-color:hsl(47, 88%, 63%);
+    --box-color:hsl(0, 0%, 100%);
+    --font-color:hsl(0, 0%, 7%);
+}
+
+body{
+    background-color: var(--main-color);
+    font-family: sans-serif;
+}
+
+.box{
+    background-color: var(--box-color);
+    height: 542px;
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    border:2px solid black;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.article{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.spam{
+    background-color: var(--main-color);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+
+h2:hover{
+    color: var(--main-color);
+}
+
+@media (max-width:480px)
+{
+    .box{
+        max-width: 345px;
+        padding: 20px;
+    }
+}
